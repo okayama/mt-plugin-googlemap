@@ -1,0 +1,42 @@
+    <mtapp:setting
+        id="use_googlemap"
+        label="<__trans phrase="Use GoogleMap.">">
+    <ul>
+    <li><input type="checkbox" name="use_googlemap" id="use_googlemap"<mt:if name="use_googlemap"> checked="checked"</mt:if> /> <__trans phrase="Use."></li>
+    </ul>
+    </mtapp:setting>
+    <mtapp:setting
+        id="default_center_point"
+        label="<__trans phrase="Default Center Point.">">
+    <ul>
+    <li>
+        <span style="font-weight:bold;color:333;"><__trans phrase="Lat."></span> <input type="text" value="<mt:var name="default_lat" escape="HTML">" name="default_lat" id="default_lat" style="width:150px" />
+        <span style="font-weight:bold;color:333;"><__trans phrase="Lon."></span> <input type="text" value="<mt:var name="default_lon" escape="HTML">" name="default_lon" id="default_lon" style="width:150px" />
+    </li>
+    </ul>
+    </mtapp:setting>
+    <mtapp:setting
+        id="default_level"
+        label="<__trans phrase="Default Zoom Level.">">
+    <ul>
+    <li>
+        <select name="default_level" id="default_level" style="width:470px">
+            <option value="1"<mt:if name="default_level" eq="1"> selected="selected"</mt:if>>1</option>
+            <option value="2"<mt:if name="default_level" eq="2"> selected="selected"</mt:if>>2</option>
+            <option value="3"<mt:if name="default_level" eq="3"> selected="selected"</mt:if>>3</option>
+            <option value="4"<mt:if name="default_level" eq="4"> selected="selected"</mt:if>>4</option>
+            <option value="5"<mt:if name="default_level" eq="5"> selected="selected"</mt:if>>5</option>
+            <option value="6"<mt:if name="default_level" eq="6"> selected="selected"</mt:if>>6</option>
+            <option value="7"<mt:if name="default_level" eq="7"> selected="selected"</mt:if>>7</option>
+            <option value="8"<mt:if name="default_level" eq="8"> selected="selected"</mt:if>>8</option>
+            <option value="9"<mt:if name="default_level" eq="9"> selected="selected"</mt:if>>9</option>
+            <option value="10"<mt:if name="default_level" eq="10"> selected="selected"</mt:if>>10</option>
+            <option value="11"<mt:if name="default_level" eq="11"> selected="selected"</mt:if>>11</option>
+            <option value="12"<mt:if name="default_level" eq="12"> selected="selected"</mt:if>>12</option>
+            <option value="13"<mt:if name="default_level" eq="13"> selected="selected"</mt:if>>13</option>
+            <option value="14"<mt:if name="default_level" eq="14"> selected="selected"</mt:if>>14</option>
+            <option value="15"<mt:if name="default_level" eq="15"> selected="selected"</mt:if>>15</option>
+        </select>
+    </li>
+    </ul>
+    </mtapp:setting>
